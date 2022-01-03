@@ -1,0 +1,25 @@
+
+.parallax1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images2.alphacoders.com/468/4682.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images7.alphacoders.com/411/411820.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.home-para{
+    max-width: 80ch;
+}

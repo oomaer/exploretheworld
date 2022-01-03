@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+.location-cover{
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.308);
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.location-cover-white{
+    height: 100px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+
+/* .location-content h1{
+
+    text-shadow: 0 0 4px #1a171b;
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+} */
+
+
+
+.location-events-container{
+    background-image: url('https://www.travelok.com/images/topic_backgrounds/western-heritage.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.location-events-content{
+    max-width: 1000px;
+    padding-top: 5rem;
+}
+
+.location-events-content > h1{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.location-events-content .location-event-card{
+    max-width: 460px;
+    height: 310px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 8rem;
+    border: 5px solid#c5c597;
+}
+
+.location-events-col1{
+    margin-right: 4rem;
+}
+.location-events-col2{
+    margin-top: 11rem;
+}
+
+.location-event-card-name{
+    position: relative;
+    top: -40px;
+    left: -20px;
+    background: linear-gradient(90deg,#f3f2ec 0,#f9f9f6 50%,hsla(0,0%,100%,0));
+    padding: 0.5rem;
+}
+
+.location-details-container{
+    display: flex;
+    justify-content: center;
+}
+
+.location-details-content{
+
+    position: relative;
+    top: -100px;
+    letter-spacing: 1px;
+}
+
+.location-details-white{
+    background-color: white;
+    padding-right: 5rem !important;
+}
+
+.location-details-content .location-details-country{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin-top: 50px;
+    padding-left: 10px
+}
+
+.location-details-header{
+    font-size: 5rem;
+    color: rgb(28, 98, 28);
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 2rem;
+}
+
+.location-details-block{
+    margin-top: 2.4rem;
+}
+
+.location-details-overview{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.location-details-discription{
+    font-weight: bold;
+}
+
+
+.comments-container{
+    background-color: #fff8e2;
+    padding: 7rem 0;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.location-comments{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+
+
+.review-card{
+    padding: 1rem;
+    margin: 1rem;
+    width: 400px;
+
+    border-bottom: 2px solid rgb(180, 171, 87);
+}
+
+.review-card .rating{
+    margin-bottom: 0;
+}
+
+.review-card p{
+    color: rgb(108 108 108);
+}
+
+.review-card .review-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-form{
+    max-width: 840px;
+    width: 100%;
+    /* background-color: white; */
+    /* box-shadow: 0 4px 7px 0 rgb(0 0 0 / 30%); */
+    padding: 1rem;
+    color: rgb(108 108 108);
+}
+
+.reivew-form-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(180, 171, 87);
+
+}
+
+.reivew-form-card input, .reivew-form-card textarea{
+    border-bottom: 1px solid rgb(180, 171, 87);
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+}
+
+.review-form button, .review-form a{
+    border: 1px solid rgb(180, 171, 87);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+}
+
+.review-form button:hover, .review-form a:hover{
+    background-color: rgb(180, 171, 87);
+    color:yellow;
+
+}
+
+@media screen and (max-width: 1100px) {
+    .location-events-cols{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .location-events-col1{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .location-details-header{
+        font-size: 3rem;
+    }
+    .location-details-overview{
+        font-size: 1.2rem;
+    }
+    .location-details-white{
+        padding-right: 1rem!important;
+    }
+    .location-events-col1{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .location-event-card-name{
+        position: relative;
+        top: -40px;
+        left: -4px;
+        background: linear-gradient(90deg,#f3f2ec 0,#f9f9f6 50%,hsla(0,0%,100%,0));
+    }
+}

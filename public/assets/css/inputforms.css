@@ -1,0 +1,40 @@
+.input-form-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images4.alphacoders.com/881/881187.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.location-input-form-container label{
+    font-size: 0.8rem !important;
+    font-weight: bold;
+}
+
+.input-form-content{
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5rem min(5vw, 5rem);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input-form-content form{
+    width: 100%;
+}
+
+
+.error-msg{
+    color: red;
+    font-size: small;
+}
+
+input.input_err, textarea.input_err{
+    border: 1px solid red;
+}
+
