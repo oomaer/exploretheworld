@@ -15,7 +15,8 @@ class HomeController extends Controller
         $popular = DB::select('select * from locations order by popularity desc limit 5');
         // dd($popular);
 
-        return view('home', ["popular" => $popular]);
+        return view('home', ["popular" => $popular], ['ourpicks' => $popular]);
+
 
     }
 

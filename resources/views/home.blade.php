@@ -77,37 +77,46 @@
 
 
 
+    <div class="home-parallax">
 
+        <a href = "/location/{{$ourpicks[0]->id}}">
+            <div class="parallax parallax1" style="background-image: url('{{$ourpicks[0]->cover_imageurl}}')">>
+                <div class="parallax-content">
+                    <h2>{{$ourpicks[0]->country}}</h2>
+                    <h1>{{$ourpicks[0]->name}}</h1>
+                </div>
+            </div>
+        </a>
 
+        <div class="home-para-container">
+            <p class="home-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quae nihil, possimus et natus inventore molestias animi aspernatur dolore quis voluptatibus deleniti optio aperiam doloribus rem excepturi ea accusantium. Reiciendis.</p>
+        </div>
 
+        <a href = "/location/{{$ourpicks[1]->id}}">
+            <div class="parallax parallax2" style="background-image: url('{{$ourpicks[1]->cover_imageurl}}')">>
+                <div class="parallax-content">
+                    <h2>{{$ourpicks[1]->country}}</h2>
+                    <h1>{{$ourpicks[1]->name}}</h1>
+                </div>
+            </div>
+        </a>
 
+        <div class="home-para-container">
+            <p class="home-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quae nihil, possimus et natus inventore molestias animi aspernatur dolore quis voluptatibus deleniti optio aperiam doloribus rem excepturi ea accusantium. Reiciendis.</p>
+        </div>
 
+        <a href = "/location/{{$ourpicks[2]->id}}">
+            <div class="parallax parallax3" style="background-image: url('{{$ourpicks[2]->cover_imageurl}}')">
+                <div class="parallax-content">
+                    <h2>{{$ourpicks[2]->country}}</h2>
+                    <h1>{{$ourpicks[2]->name}}</h1>
+                </div>
+            </div>
+        </a>
 
-
-
-
-
-
-    {{-- <div class="parallax1">
-        <h1>Hello1</h1>
-    </div>
-    <p class="home-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quae nihil, possimus et natus inventore molestias animi aspernatur dolore quis voluptatibus deleniti optio aperiam doloribus rem excepturi ea accusantium. Reiciendis.</p>
-
-
-    <div class="parallax2container">
-    <div class="parallax2">
-        <h1 class="parallax2-heading">Hello2</h1>
-    </div>
-    </div>
-
-    <p class="home-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quae nihil, possimus et natus inventore molestias animi aspernatur dolore quis voluptatibus deleniti optio aperiam doloribus rem excepturi ea accusantium. Reiciendis.</p>
-
-    <div class="parallax3">
-        <h1>Hello2</h1>
-
-    </div>
-    <p class="home-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quae nihil, possimus et natus inventore molestias animi aspernatur dolore quis voluptatibus deleniti optio aperiam doloribus rem excepturi ea accusantium. Reiciendis.</p> --}}
-
+        <div class="home-para-container">
+            <p class="home-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quae nihil, possimus et natus inventore molestias animi aspernatur dolore quis voluptatibus deleniti optio aperiam doloribus rem excepturi ea accusantium. Reiciendis.</p>
+        </div>
 
 
 </div>

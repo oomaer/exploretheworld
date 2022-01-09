@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
+
+* a{
+    color: inherit;
+    text-decoration: none !important;
+}
+
 .home-cover-container{
     height: 100vh;
     display: flex;
@@ -172,6 +179,69 @@
     color: rgb(189, 186, 186);
 }
 
+
+
+
+
+.parallax{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.parallax:hover::after{
+    background-color: rgba(0, 0, 0, 0.657);
+}
+
+.parallax::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.parallax-content h1, .parallax-content h2{
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.parallax-content h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+}
+
+.home-para-container{
+    padding: 10rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #06201f;
+    color: white;
+}
+
+.home-para{
+    max-width: 80ch;
+}
+
+
+
 @media only screen and (max-width: 1291px){
     .cardsection1-smallcard-container{
         width: 17vw;
@@ -219,50 +289,3 @@
         margin: 0.3rem;
     }
 }
-
-
-.parallax1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://images2.alphacoders.com/468/4682.jpg');
-    height: 100vh;
-    background-size: cover;
-    /* background-attachment: fixed; */
-}
-
-
-.parallax2-container{
-    height: calc(100vh + 400px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parallax2{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://images2.alphacoders.com/609/609546.jpg');
-    /* background-size: 90vh; */
-    /* background-attachment: fixed; */
-    transform: translate3d(0px, -200px, 0px);
-}
-
-
-.parallax3{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://images2.alphacoders.com/609/609546.jpg');
-    background-size: cover;
-    /* background-attachment: fixed; */
-}
-
-.home-para{
-    max-width: 80ch;
-}
-
