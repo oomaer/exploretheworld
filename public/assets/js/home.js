@@ -30,6 +30,7 @@ $(window).scroll(() => {
 
     $(".upbaloon").css({"bottom": `${scrollTop-250}px`, "left": `${(scrollTop*0.5)}px`, 'width': `${(scrollTop*0.5)+200}px`});
     $('.cover-header').css('bottom', `${scrollTop*0.5}px`);
+    $('.down-arrow').css('bottom', `-${scrollTop*0.3}px`);
 
 });
 

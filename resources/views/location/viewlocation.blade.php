@@ -46,16 +46,20 @@
                 <div class="location-events-cols location-events-content d-flex flex-wrap justify-content-center">
                     <div class="location-events-col1">
                         @for ($i = 0; $i < sizeof($events); $i+=2)
-                            <div class="location-event-card" style = "background-image: url({{$events[$i]->imageurl}})">
-                                <h2 class="location-event-card-name">{{$events[$i]->name}}</h2>
-                            </div>
+                            <a href = '/event/{{$events[$i]->id}}'>
+                                <div class="location-event-card" style = "background-image: url({{$events[$i]->imageurl}})">
+                                    <h2 class="location-event-card-name">{{$events[$i]->name}}</h2>
+                                </div>
+                            </a>
                         @endfor
                     </div>
                     <div class="location-events-col2">
                         @for ($i = 1; $i < sizeof($events); $i+=2)
-                            <div class="location-event-card" style = "background-image: url({{$events[$i]->imageurl}})">
-                                <h2 class="location-event-card-name">{{$events[$i]->name}}</h2>
-                            </div>
+                            <a href = '/event/{{$events[$i]->id}}'>
+                                <div class="location-event-card" style = "background-image: url({{$events[$i]->imageurl}})">
+                                    <h2 class="location-event-card-name">{{$events[$i]->name}}</h2>
+                                </div>
+                            </a>
                         @endfor
                     </div>
                 </div>

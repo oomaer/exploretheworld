@@ -12,6 +12,26 @@ class EventController extends Controller
 {
 
 
+    public function viewEvent($id){
+
+        try{
+            $result = DB::select('select * from events where id = ?',[$id]);
+            if(empty($result)){
+                abort(404);
+            }
+            else{
+            // dd($result);
+                $locationquery = DB::select('select name, id from locations where id = ?', [$result[0]->location_id]);
+                $location = $locationquery[0]->name." (".$locationquery[0]->id.")";
+                    return view('events.viewevent', ["event" => $result[0], 'id' => $id, "location" => $location]);
+                }
+            }
+            catch(Exception $e){
+                abort(404);
+            }
+
+    }
+
     public function addEvent(){
 
         return view('events.addevent');

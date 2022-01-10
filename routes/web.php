@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,9 +43,16 @@ Route::get('/addevent', 'App\Http\Controllers\EventController@addEvent');
 Route::post('/addevent', 'App\Http\Controllers\EventController@store');
 Route::get('/updateevent/{id}', 'App\Http\Controllers\EventController@updateEvent');
 Route::post('/updateevent/{id}', 'App\Http\Controllers\EventController@update');
+Route::post('/deleteevent/{id}', 'App\Http\Controllers\EventController@delete');
+Route::get('/event/{id}', 'App\Http\Controllers\EventController@viewEvent');
 
 
 Route::post('/postreview/{location_id}', 'App\Http\Controllers\ReviewController@store');
 Route::post('/updatereview/{id}', 'App\Http\Controllers\ReviewController@update');
 
 Route::get('/deletereview/{id}', 'App\Http\Controllers\ReviewController@delete');
+
+
+Route::get('/deletereview/{id}', 'App\Http\Controllers\ReviewController@delete');
+
+Route::get('/recommendations/{filter}', 'App\Http\Controllers\RecommendationsController@index');

@@ -74,6 +74,17 @@
     padding: 0.5rem;
 }
 
+.location-events-cols a div{
+    color: rgb(61, 60, 60);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.location-events-cols a:hover div{
+    color: rgb(28, 98, 28);
+    transform: translateY(-10px);
+}
+
 .location-details-container{
     display: flex;
     justify-content: center;
@@ -113,17 +124,19 @@
 .location-details-overview{
     font-weight: bold;
     font-size: 1.6rem;
+    color:#3a3a3a;
 }
 
 .location-details-discription{
     font-weight: bold;
+    color: #6a6a6a;
 }
 
 
 .comments-container{
     background-color: #fff8e2;
     padding: 7rem 0;
-    font-family: 'Oswald', sans-serif !important;
+    /* font-family: 'Oswald', sans-serif !important; */
 }
 
 .location-comments{
@@ -199,13 +212,19 @@
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .location-events-cols{
         flex-direction: column !important;
         align-items: center !important;
     }
     .location-events-col1{
         margin-top: 0;
+    }
+    .location-events-content .location-event-card{
+        margin-bottom: 2rem;
+    }
+    .location-events-col2{
+        margin-top: 2rem;
     }
 }
 
@@ -233,5 +252,8 @@
         top: -40px;
         left: -4px;
         background: linear-gradient(90deg,#f3f2ec 0,#f9f9f6 50%,hsla(0,0%,100%,0));
+    }
+    .review-card{
+        width: 80vw;
     }
 }

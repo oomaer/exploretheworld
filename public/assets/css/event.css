@@ -1,0 +1,21 @@
+
+.event-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10rem;
+}
+
+
+.event-content img{
+    margin-bottom: 3rem;
+}
+
+.event-content h1{
+    margin-bottom: 1rem;
+}
+
+.event-content p{
+    max-width: 90ch;
+}

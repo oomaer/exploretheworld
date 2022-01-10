@@ -54,6 +54,17 @@
     z-index: -1;
 }
 
+.down-arrow{
+    color: #06201f;
+    transition: transform 0.4s ease-in-out;
+    position: relative;
+    font-weight: bold;
+}
+
+.down-arrow:hover{
+    color: white;
+    transform: translateY(10px);
+}
 
 .home-intro-container{
     display: flex;

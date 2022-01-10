@@ -15,8 +15,12 @@
         <div class="home-cover-content">
 
             <h2 class="cover-header">Plan your Next</h2>
-            <h1 class="cover-header">Adventure</h1>
-            <a href = '#'>down</a>
+            <h1 class="cover-header mb-3">Adventure</h1>
+            <a href = '#' class="down-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </a>
             <img src = '/assets/images/upbaloon.png' class="upbaloon"/>
             {{-- <img src = '/assets/images/forestvector.jpg' class="forest"/> --}}
             {{-- <img src = '/assets/images/clif.jpg' class="upbaloon"/> --}}
@@ -45,7 +49,7 @@
                 <p></p>
             </div>
             <div class = "cardsection1-cards">
-                <a href = "#">
+                <a href = "/location/{{$popular[0]->id}}">
                     <div class = 'cardsection1-leftcard-container' style = "background-image : LINEAR-GRADIENT(46deg, RGB(0, 0, 0, 0.7) 10%, transparent 90%), url('{{$popular[0]->cover_imageurl}}')">
                         <div class = 'cardsection1-leftcard-content' >
                             <p class = 'cardsection1-card-date'>{{$popular[0]->country}}</p>
@@ -57,7 +61,7 @@
                     <div class = 'cardsection1-rightcards-content'>
                         @for ($i = 1; $i < sizeof($popular); $i+=1)
 
-                            <a href = "/content/${content.ID}">
+                            <a href = "/location/{{$popular[$i]->id}}">
                                 <div class = 'cardsection1-smallcard-container'
                                 style = "background-image : LINEAR-GRADIENT(TO RIGHT top, RGB(0, 0, 0, 0.8) 5%, transparent 90%), url('{{$popular[$i]->imageurl}}')">
                                         <div class = 'cardsection1-smallcard-content'>

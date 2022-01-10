@@ -9,6 +9,8 @@
     <link href="{{ URL::asset('assets/css/location.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('assets/css/inputforms.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('assets/css/home.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('assets/css/recommendations.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('assets/css/event.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -33,13 +35,16 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="/recommendations/ourpicks">Our Picks</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="/recommendations/toprated">Top Rated</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/recommendations/popular">Popular</a>
                   </li>
                   @if(auth()->user())
                   <li class="nav-item dropdown">
