@@ -32,6 +32,10 @@ $(window).scroll(() => {
     $('.cover-header').css('bottom', `${scrollTop*0.5}px`);
     $('.down-arrow').css('bottom', `-${scrollTop*0.3}px`);
 
+    if(scrollTop > 100){
+
+    }
+
 });
 
 
